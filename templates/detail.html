@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>{{ portfolio }}</h2>
+<p>{{ portfolio.portfolio_description }}</p>
+
+<h4>Projects</h4>
+<ul>
+  {% for project in portfolio.projects.all %}
+    <li>{{ project }}</li>
+  {% endfor %}
+</ul>
+</body>
+</html>
